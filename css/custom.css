@@ -5,25 +5,65 @@ body {
 
 /* The side navigation menu */
 
-.sidebar {
+#sidebar {
     height: 100vh;
-    background-color: #333;
     width: 60px;
     float: left;
     margin-right: 20px;
-    color: #0099ff;
     text-align: center;
-    -webkit-box-shadow: 10px 0 5px -2px #888;
-    box-shadow: 5px 0 3px 0px #888;
+    -webkit-box-shadow: 2px 0 2px 0 #aaa;
+    box-shadow: 2px 0 2px 0 #aaa;
+}
+
+#sidebar-menu {
+    border: 1px solid black;
+    margin-top: 33vh;
+}
+
+#sidebar-menu .hidden {
+    display: none;
+}
+
+#sidebar-menu img {
+    width: 50px;
+    height: 25px;
+    padding: 0 0 0 0;
+}
+
+#sidebar a {
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+    line-height: 1.75rem;
+    transition: 0.3s;
+    color: #F5F5F5;
+    padding: 9px 0 4px 0;
+}
+
+#sidebar a:hover {
+    background: #616161;
+}
+
+.hidden {
+    display: none;
 }
 
 #openButton {
-    background: #333;
-    line-height: 4rem;
+    line-height: 3.75rem;
     margin: 15px 0;
     width: auto;
     font-size: 2.5rem;
     position: relative;
+}
+
+#closeButton {
+    line-height: 3.75rem;
+    width: auto;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .sidenav {
@@ -37,7 +77,6 @@ body {
     /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -47,16 +86,22 @@ body {
     /* 0.5 second transition effect to slide in the sidenav */
 }
 
+#sidenav-menu {
+    border: 1px solid black;
+    margin-top: 33vh;
+}
+
 
 /* The navigation menu links */
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    width: 100%;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
     display: block;
-    transition: 0.3s
+    font-size: 25px;
+    transition: 0.3s;
+    color: #F5F5F5;
+    padding: 9px 0 11px 50px;
 }
 
 
@@ -64,18 +109,17 @@ body {
 
 .sidenav a:hover,
 .offcanvas a:focus {
-    color: #f1f1f1;
+    background: #616161;
 }
 
 
 /* Position and style the close button (top right corner) */
 
-.sidenav .closebtn {
+.sidenav {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
 }
 
 
@@ -114,10 +158,9 @@ body {
 
 .headline-text {
     position: relative;
-    z-index: 1;
     padding: 25px 0 0 35%;
     width: 65%;
-    margin: 50px 0 0 20px;
+    margin: 23px 0 0 20px;
     /* border: 1px solid orange; */
     background: #0099ff;
     text-align: left;
